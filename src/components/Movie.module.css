@@ -1,0 +1,16 @@
+.movieCard {
+  font-size: 1rem;
+}
+
+.movieImage {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 560px) {
+  .movieCard {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+}
