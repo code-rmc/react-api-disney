@@ -1,0 +1,25 @@
+.container {
+  padding: 35px;
+}
+.movieDetail {
+  display: flex;
+  margin-bottom: 45px;
+}
+.movieHeader {
+  justify-content: space-between;
+  align-items: center;
+}
+.bodyMovie {
+  justify-content: space-around;
+}
+.bodyMovie img {
+  max-width: 550px;
+  object-fit: cover;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 40%;
+}
