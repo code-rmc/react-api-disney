@@ -14,3 +14,8 @@ export function getCharacterById(path, id) {
     return fetch(`${url}${path}/${id}`)
     .then((data) => data.json())
 }
+
+export function searchAPI({type, name, genre = "", ord = "ASC"}) {
+    return fetch(`${url}${type}/filter?search[name]=${name}&options[genre]=${genre}&options[sort]=${ord}`)
+    .then((data) => data.json())
+}

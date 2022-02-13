@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import styles from "./App.module.css";
+import { Search } from "./components/Search";
 import { LandingPage } from "./pages/LandingPage";
 import { MovieDetails } from "./pages/MoviesDetails";
 import { CharacterDetails } from "./pages/CharacterDetails";
@@ -13,6 +14,7 @@ export function App(){
                     <Link to="/">
                         <h2 className={styles.title}>Movies</h2>
                     </Link>
+                    <Search />
                 </header>
                 <main>
                     <Routes>
